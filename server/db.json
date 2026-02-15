@@ -1,0 +1,109 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Complete UI Design",
+      "description": "Create a task manager UI",
+      "status": "In Progress",
+      "dueDate": "2026-03-30"
+    },
+    {
+      "id": 2,
+      "title": "Write login flow",
+      "description": "Implement login form and token storage",
+      "status": "To-Do",
+      "dueDate": "2026-04-02"
+    },
+    {
+      "id": 3,
+      "title": "Build task cards",
+      "description": "Create responsive task card layout",
+      "status": "In Progress",
+      "dueDate": "2026-04-05"
+    },
+    {
+      "id": 4,
+      "title": "Add task form",
+      "description": "Form with title, description, status, due date",
+      "status": "To-Do",
+      "dueDate": "2026-04-06"
+    },
+    {
+      "id": 5,
+      "title": "Status update",
+      "description": "Allow status change from dashboard",
+      "status": "To-Do",
+      "dueDate": "2026-04-08"
+    },
+    {
+      "id": 6,
+      "title": "Delete confirmation",
+      "description": "Prompt before deleting a task",
+      "status": "Completed",
+      "dueDate": "2026-03-20"
+    },
+    {
+      "id": 7,
+      "title": "Pagination UI",
+      "description": "Add pagination controls for task list",
+      "status": "To-Do",
+      "dueDate": "2026-04-10"
+    },
+    {
+      "id": 8,
+      "title": "Filter by status",
+      "description": "Filter tasks by status",
+      "status": "In Progress",
+      "dueDate": "2026-04-11"
+    },
+    {
+      "id": 9,
+      "title": "Loading states",
+      "description": "Show loading indicators for API calls",
+      "status": "Completed",
+      "dueDate": "2026-03-25"
+    },
+    {
+      "id": 10,
+      "title": "Error banners",
+      "description": "Show error messages on failed requests",
+      "status": "In Progress",
+      "dueDate": "2026-04-12"
+    },
+    {
+      "id": 11,
+      "title": "Empty state",
+      "description": "Display a friendly empty state",
+      "status": "To-Do",
+      "dueDate": "2026-04-14"
+    },
+    {
+      "id": 12,
+      "title": "Form validation",
+      "description": "Validate required fields in forms",
+      "status": "To-Do",
+      "dueDate": "2026-04-15"
+    },
+    {
+      "id": 13,
+      "title": "Sort by due date",
+      "description": "Enable sorting by due date",
+      "status": "In Progress",
+      "dueDate": "2026-04-16"
+    },
+    {
+      "id": 14,
+      "title": "Responsive tweaks",
+      "description": "Improve mobile spacing and layout",
+      "status": "Completed",
+      "dueDate": "2026-03-28"
+    },
+    {
+      "id": 15,
+      "title": "Auth header integration",
+      "description": "Attach token to API requests",
+      "status": "To-Do",
+      "dueDate": "2026-04-18"
+    }
+  ]
+}
