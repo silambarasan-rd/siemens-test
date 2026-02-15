@@ -62,6 +62,24 @@
   white-space: nowrap;
 }
 
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .task-description {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  .task-description {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px)  {
+  .task-description {
+    max-width: 320px;
+  }
+}
+
 .task-footer {
   display: flex;
   justify-content: space-between;

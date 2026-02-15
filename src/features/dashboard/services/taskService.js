@@ -30,6 +30,11 @@ export const taskService = {
     return response.data;
   },
 
+  editTask: async (id, taskData) => {
+    const response = await api.put(`/tasks/${id}`, taskData);
+    return response.data;
+  },
+
   deleteTask: async (id) => {
     const response = await api.delete(`/tasks/${id}`);
     return response.data;

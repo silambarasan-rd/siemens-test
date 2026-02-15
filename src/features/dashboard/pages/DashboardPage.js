@@ -4,7 +4,7 @@ import TaskCard from '../components/TaskCard';
 import { taskService } from '../services/taskService';
 import './DashboardPage.css';
 
-const TASKS_PER_PAGE = 6;
+const TASKS_PER_PAGE = 9;
 
 const DashboardPage = () => {
   const [tasks, setTasks] = useState([]);

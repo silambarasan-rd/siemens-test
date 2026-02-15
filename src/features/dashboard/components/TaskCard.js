@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './TaskCard.css';
 
-const TaskCard = ({ task, enableEditButton, enableDeleteButton, onDelete, onStatusChange }) => {
+const TaskCard = ({ task, enableEditButton, enableDeleteButton, onEdit, onDelete, onStatusChange }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [status, setStatus] = useState(task.status);
 
@@ -43,9 +43,14 @@ const TaskCard = ({ task, enableEditButton, enableDeleteButton, onDelete, onStat
         <div className="task-actions">
           {
             enableEditButton && (
-              <button onClick={() => setIsEditing(true)} className="edit-btn">
-                Change Status
-              </button>
+              <>
+                <button onClick={() => setIsEditing(true)} className="edit-btn">
+                  Change Status
+                </button>
+                <button onClick={() => onEdit(task.id)} className="edit-btn">
+                  Edit
+                </button>
+              </>
             )
           }
           {

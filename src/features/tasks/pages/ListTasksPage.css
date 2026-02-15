@@ -1,0 +1,94 @@
+.list-task-page {
+  max-width: 1200px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.list-task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.list-task-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.add-task-btn {
+  background: #029bca;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.add-task-btn:hover {
+  background: #029bca;
+}
+
+.tasks-list-container {
+  margin-bottom: 30px;
+}
+
+.error-banner {
+  background: #fee;
+  color: #c00;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c00;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.create-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.create-btn:hover {
+  background: #5568d3;
+}
+
+@media (max-width: 600px) {
+  .list-task-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .add-task-btn {
+    width: 100%;
+  }
+}
