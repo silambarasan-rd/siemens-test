@@ -16,67 +16,72 @@ import EditTaskPage from './features/tasks/pages/EditTaskPage';
 
 import './App.css';
 import ListTasksPage from './features/tasks/pages/ListTasksPage';
+import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from 'react-tooltip';
 
 function App() {
   return (
-    <Router>
-      <AuthProvider>
-        <Routes>
-          {/* Public Routes */}
-          <Route path="/login" element={<LoginPage />} />
+    <>
+      <Tooltip id="custom-tooltip" delayShow={150} />
+      <Router>
+        <AuthProvider>
+          <Routes>
+            {/* Public Routes */}
+            <Route path="/login" element={<LoginPage />} />
 
-          {/* Protected Routes */}
-          <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute>
-                <>
-                  <Header />
-                  <DashboardPage />
-                </>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/tasks"
-            element={
-              <ProtectedRoute>
-                <>
-                  <Header />
-                  <ListTasksPage />
-                </>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/tasks/create"
-            element={
-              <ProtectedRoute>
-                <>
-                  <Header />
-                  <CreateTaskPage />
-                </>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/tasks/edit/:id"
-            element={
-              <ProtectedRoute>
-                <>
-                  <Header />
-                  <EditTaskPage />
-                </>
-              </ProtectedRoute>
-            }
-          />
+            {/* Protected Routes */}
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <>
+                    <Header />
+                    <DashboardPage />
+                  </>
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/tasks"
+              element={
+                <ProtectedRoute>
+                  <>
+                    <Header />
+                    <ListTasksPage />
+                  </>
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/tasks/create"
+              element={
+                <ProtectedRoute>
+                  <>
+                    <Header />
+                    <CreateTaskPage />
+                  </>
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/tasks/edit/:id"
+              element={
+                <ProtectedRoute>
+                  <>
+                    <Header />
+                    <EditTaskPage />
+                  </>
+                </ProtectedRoute>
+              }
+            />
 
-          {/* Default route */}
-          <Route path="/" element={<Navigate to="/dashboard" replace />} />
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
-        </Routes>
-      </AuthProvider>
-    </Router>
+            {/* Default route */}
+            <Route path="/" element={<Navigate to="/dashboard" replace />} />
+            <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          </Routes>
+        </AuthProvider>
+      </Router>
+    </>
   );
 }
 

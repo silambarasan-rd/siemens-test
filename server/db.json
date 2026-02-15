@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Complete UI Design",
-      "description": "Create a task manager UI",
+      "description": "Create a comprehensive task manager user interface with modern design principles, ensuring accessibility standards are met. The interface should include intuitive navigation, responsive layouts for all screen sizes, and consistent branding elements throughout. Focus on user experience by implementing clear visual hierarchy, appropriate color contrast, and interactive feedback for all user actions to create a seamless workflow.",
       "status": "In Progress",
       "dueDate": "2026-03-30"
     },
@@ -17,7 +17,7 @@
     {
       "id": 3,
       "title": "Build task cards",
-      "description": "Create responsive task card layout",
+      "description": "Create responsive task card layout components that display task information in an organized and visually appealing manner. Each card should show the task title, description with proper text truncation, status badge with color coding, and due date. Implement hover effects, smooth transitions, and ensure the cards stack properly on mobile devices while maintaining readability and touch-friendly interaction zones.",
       "status": "In Progress",
       "dueDate": "2026-04-05"
     },
@@ -52,7 +52,7 @@
     {
       "id": 8,
       "title": "Filter by status",
-      "description": "Filter tasks by status",
+      "description": "Implement comprehensive filtering functionality that allows users to filter tasks by their current status including To-Do, In Progress, and Completed. The filter should be easily accessible, provide clear visual feedback when active, and update the task list dynamically without requiring a page refresh. Consider adding filter badges to show active filters and quick clear options for better user experience.",
       "status": "In Progress",
       "dueDate": "2026-04-11"
     },
@@ -66,7 +66,7 @@
     {
       "id": 10,
       "title": "Error banners",
-      "description": "Show error messages on failed requests",
+      "description": "Implement a robust error handling system that displays user-friendly error messages when API requests fail. The error banners should be clearly visible, non-intrusive, and provide actionable information to help users understand what went wrong and how to proceed. Include auto-dismiss functionality after a reasonable duration while allowing users to manually close error messages if needed immediately.",
       "status": "In Progress",
       "dueDate": "2026-04-12"
     },
@@ -87,7 +87,7 @@
     {
       "id": 13,
       "title": "Sort by due date",
-      "description": "Enable sorting by due date",
+      "description": "Enable comprehensive sorting functionality that allows users to sort tasks by their due dates in both ascending and descending order. The sorting mechanism should be intuitive with clear visual indicators showing the current sort direction. Implement persistent sorting preferences so users don't need to re-apply their preferred sort order on each page visit, and ensure the sorting works efficiently even with large datasets.",
       "status": "In Progress",
       "dueDate": "2026-04-16"
     },

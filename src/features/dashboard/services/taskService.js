@@ -3,7 +3,7 @@ import api from '../../../shared/utils/api';
 export const taskService = {
   getAllTasks: async (page = 1, limit = 10) => {
     const response = await api.get('/tasks', {
-      params: { _page: page, _limit: limit },
+      params: { _page: page, _limit: limit, _sort: 'dueDate' },
     });
     return response.data;
   },

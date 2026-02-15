@@ -21,7 +21,7 @@ const TaskCard = ({ task, enableEditButton, enableDeleteButton, onEdit, onDelete
       <span className="due-date">
         📅 {new Date(task.dueDate).toLocaleDateString()}
       </span>
-      <p className="task-description" title={task.description}>
+      <p className="task-description" data-tooltip-id="custom-tooltip" data-tooltip-content={task.description}>
         {task.description}
       </p>
 

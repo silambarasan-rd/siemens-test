@@ -20,3 +20,13 @@ html {
     transform: rotate(360deg);
   }
 }
+
+.react-tooltip {
+    max-width: 320px;
+}
+
+@media (max-width: 600px) {
+  .react-tooltip {
+    max-width: 85%;
+  }
+}
