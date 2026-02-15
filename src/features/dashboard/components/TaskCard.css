@@ -1,0 +1,146 @@
+.task-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.task-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  flex: 1;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.status-badge.to-do {
+  background: #fee;
+  color: #c00;
+}
+
+.status-badge.in-progress {
+  background: #ffe;
+  color: #880;
+}
+
+.status-badge.completed {
+  background: #efe;
+  color: #080;
+}
+
+.task-description {
+  color: #666;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.due-date {
+  font-size: 13px;
+  color: #999;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-btn {
+  background: #ddd;
+  color: #333;
+}
+
+.edit-btn:hover {
+  background: #ccc;
+}
+
+.delete-btn {
+  background: #fdd;
+  color: #c00;
+}
+
+.delete-btn:hover {
+  background: #fcc;
+}
+
+.save-btn {
+  background: #667eea;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #5568d3;
+}
+
+.cancel-btn {
+  background: #ddd;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background: #ccc;
+}
+
+.status-edit {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.status-edit select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+}
